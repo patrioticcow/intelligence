@@ -1,0 +1,13 @@
+<ion-view title="{{group.name}}">
+    <ion-content class="has-header">
+
+        <div class="list">
+            <div ng-repeat="test in tests">
+                <a class="item" href="#/tab/category/{{params.catId}}/group/{{params.groupId}}/test/{{test.id}}/question/0">
+                    {{test.name}}
+                </a>
+            </div>
+        </div>
+
+    </ion-content>
+</ion-view>

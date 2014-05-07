@@ -1,0 +1,19 @@
+<ion-view title="Categories">
+    <ion-content class="has-header">
+
+        <div class="list">
+            <div ng-repeat="category in categories">
+
+                <div class="item item-divider">
+                    {{category.name}}
+                </div>
+
+                <a class="item" ng-repeat="group in category.groups" href="#/tab/category/{{category.id}}/group/{{group.id}}">
+                    {{group.name}}
+                </a>
+            </div>
+        </div>
+
+    </ion-content>
+</ion-view>
+

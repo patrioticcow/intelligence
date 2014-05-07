@@ -1,0 +1,44 @@
+<ion-view title="{{test.name}}">
+
+    <ion-header-bar class="bar-header">
+        <button class="button button-icon" ng-click="toggleSideMenu()">
+            <i class="icon ion-navicon"></i> All Questions
+        </button>
+        <h1 class="title">{{test.name}}</h1>
+    </ion-header-bar>
+
+    <ion-content class="has-header">
+
+        <div class="list card">
+
+            <div class="item no-elipsis item_bg">
+                <h2><strong>{{question.name}}</strong></h2>
+
+                <p>Available Points: {{points}}</p>
+            </div>
+
+            <div class="item item-body">
+                <img class="full-image" src="tests/{{params.catId}}/{{params.groupId}}/{{params.testId}}/{{params.questionId}}.png">
+            </div>
+
+            <div class="item no-margin no-padding">
+                <logic></logic>
+            </div>
+
+            <div class="item item_bg" style="padding: 0">
+                <div class="row">
+                    <div class="col">
+                        <button class="button button-full button-positive" ng-click='prevQuestion()'>Back
+                        </button>
+                    </div>
+                    <div class="col col-75">
+                        <button class="button button-full button-positive" id="nextQuestion" ng-click='nextQuestion(response)'>{{buttonName}}
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </ion-content>
+</ion-view>

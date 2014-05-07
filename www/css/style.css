@@ -1,0 +1,19 @@
+/* Empty. Add your own CSS if you like */
+.no-elipsis h2 {
+	overflow      : visible;
+	text-overflow : clip;
+	white-space   : normal;
+}
+
+.item_bg {
+	background : #F8F8F8;
+}
+
+.no-margin {
+	margin : 0;
+}
+
+.no-padding {
+	padding : 0;
+}
+
