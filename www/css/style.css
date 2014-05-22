@@ -1,12 +1,18 @@
 /* Empty. Add your own CSS if you like */
 .no-elipsis h2 {
-	overflow      : visible;
-	text-overflow : clip;
-	white-space   : normal;
+	overflow      : visible !important;
+	text-overflow : clip !important;
+	white-space   : normal !important;
+}
+
+.no-elipsis {
+	overflow      : visible !important;
+	text-overflow : clip !important;
+	white-space   : normal !important;
 }
 
 .item_bg {
-	background : #F8F8F8;
+	background : #f8f8f8;
 }
 
 .no-margin {
@@ -17,3 +23,12 @@
 	padding : 0;
 }
 
+.pre_answer {
+	float   : left;
+	padding : 15px 5px;
+}
+
+.post_answer {
+	float   : left;
+	padding : 15px 5px;
+}

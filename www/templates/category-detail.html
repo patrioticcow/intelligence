@@ -1,5 +1,11 @@
 <ion-view title="{{group.name}}">
-    <ion-content class="has-header">
+
+	<ion-header-bar class="bar-header">
+		<a class="button icon-left ion-chevron-left button-clear button-dark" href="/#/tab/categories">Back</a>
+		<h1 class="title">Test Sub Categories</h1>
+	</ion-header-bar>
+
+	<ion-content>
 
         <div class="list">
             <div ng-repeat="test in tests">

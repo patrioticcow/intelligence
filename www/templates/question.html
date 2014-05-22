@@ -1,44 +1,115 @@
 <ion-view title="{{test.name}}">
 
-    <ion-header-bar class="bar-header">
-        <button class="button button-icon" ng-click="toggleSideMenu()">
-            <i class="icon ion-navicon"></i> All Questions
-        </button>
-        <h1 class="title">{{test.name}}</h1>
-    </ion-header-bar>
+	<ion-header-bar class="bar-header">
+		<button class="button button-icon" ng-click="toggleSideMenu()">
+			<i class="icon ion-navicon"></i> All Questions
+		</button>
+		<h1 class="title">{{test.name}}</h1>
+	</ion-header-bar>
 
-    <ion-content class="has-header">
+	<ion-content class="has-header">
 
-        <div class="list card">
+		<div class="list card">
 
-            <div class="item no-elipsis item_bg">
-                <h2><strong>{{question.name}}</strong></h2>
+			<div class="item no-elipsis item_bg">
+				<h2><strong>{{question.name}}</strong></h2>
 
-                <p>Available Points: {{points}}</p>
-            </div>
+				<p>Available Points: {{points}}</p>
+			</div>
 
-            <div class="item item-body">
-                <img class="full-image" src="tests/{{params.catId}}/{{params.groupId}}/{{params.testId}}/{{params.questionId}}.png">
-            </div>
+			<div class="item item-body">
+				<img class="full-image" src="tests/{{params.catId}}/{{params.groupId}}/{{params.testId}}/{{params.questionId}}.png">
+			</div>
 
-            <div class="item no-margin no-padding">
-                <logic></logic>
-            </div>
+			<div class="item no-margin no-padding">
+				<logic></logic>
+			</div>
 
-            <div class="item item_bg" style="padding: 0">
-                <div class="row">
-                    <div class="col">
-                        <button class="button button-full button-positive" ng-click='prevQuestion()'>Back
-                        </button>
-                    </div>
-                    <div class="col col-75">
-                        <button class="button button-full button-positive" id="nextQuestion" ng-click='nextQuestion(response)'>{{buttonName}}
-                        </button>
-                    </div>
-                </div>
-            </div>
+			<div class="item item_bg" style="padding: 0">
+				<div class="row">
+					<div class="col">
+						<button class="button button-full button-positive" ng-click='prevQuestion()'>Back
+						</button>
+					</div>
+					<div class="col col-75">
+						<button class="button button-full button-positive" id="nextQuestion" ng-click='nextQuestion(response)'>{{buttonName}}
+						</button>
+					</div>
+				</div>
+			</div>
 
-        </div>
+		</div>
 
-    </ion-content>
+	</ion-content>
 </ion-view>
+
+<div class="row-fluid">
+	<ul class="thumbnails">
+		<li class="span3">
+			<div class="thumbnail">
+				<div class="generated_image">
+					<h3>Business VoIP</h3>
+					<img alt="Business Phone &amp; Other Business Applications" src="http://2013.optibiz.us/feeder_images/ip_phones.jpg"/>
+
+					<div class="image_caption">*Business VoIP SIP Trunks</div>
+
+					<div class="image_caption">*Local DID&#39;s</div>
+
+					<div class="image_caption">*Unlimited Trunks</div>
+
+					<div class="image_caption">&nbsp;</div>
+
+					<div class="image_caption">VoIP Internet Service are offered at competitive pricing, including SIP Trunks and Business VoIP.&nbsp; We provide reliable and inexpensive phone services, beyond your businesses firewall. &nbsp;We receive discounted pricing on bandwidth&nbsp;services which allows us to pass the saving on.&nbsp; Our telecom providers brings you affordable high-speed connectivity with ds3 lines and t1 providers, you can depend on to support critical business functions all while allowing you to cut cost and improve response time.&nbsp;</div>
+				</div>
+			</div>
+		</li>
+		<li class="span3">
+			<div class="thumbnail">
+				<div class="generated_image">
+					<h3>IP Phone</h3>
+					<img alt="Sip Trunks" src="http://2013.optibiz.us/feeder_images/ISP_providers.jpg"/>
+
+					<div class="image_caption">*IP Phones &amp; Soft Phones</div>
+
+					<div class="image_caption">*No Trunk Limits</div>
+
+					<div class="image_caption">*IP fail-over with VM<br/> &nbsp;</div>
+
+					<div class="image_caption">IP Phones and Voice over IP Phone services combined with our bandwidth services, give customers a very strong and stable service.&nbsp; Our VoIP Services are scalable to the individual customers&rsquo; needs, and guaranteed uptime is provided for you and your business.&nbsp; Our SLA provides for outstanding uptime, dependability and security for your businesses telecommunication needs.&nbsp; Customers receive exceptional customer service and support, from a dependable company.</div>
+				</div>
+			</div>
+		</li>
+		<li class="span3">
+			<div class="thumbnail">
+				<div class="generated_image">
+					<h3>T1 Provider</h3>
+					<img alt="test" src="http://2013.optibiz.us/feeder_images/asterisk_ip_device.jpg"/>
+
+					<div class="image_caption">*Voice &amp; Data T1 Circuits</div>
+
+					<div class="image_caption">*Local &amp; Long Distance T1&#39;s</div>
+
+					<div class="image_caption">*Fiber only network in most areas</div>
+
+					<div class="image_caption">&nbsp;</div>
+
+					<div class="image_caption">Dedicated Voice and Data T1 connections by VoIP Dialing, including Flex PRI connections are provided at a lower price.&nbsp; VoIP Dialing is a leader in the telecom industry and provides a variety of bandwidths, which are scalable to any business needs.&nbsp; VoIP Dialing spends the time to learn your telephony application bandwidth&nbsp;needs, such as Flex PRI, and can provide you with competitive pricing.&nbsp;</div>
+				</div>
+			</div>
+		</li>
+		<li class="span3">
+			<div class="thumbnail">
+				<div class="generated_image">
+					<h3>SMS Marketing</h3>
+					<img alt="Sms" src="http://2013.optibiz.us/feeder_images/business_grade_voip.jpg"/>
+
+					<div class="image_caption">
+						<p>*Bulk SMS Marketing for Less<br/> *Keyword Driven SMS<br/> *2-way SMS Capabilities<br/>
+							<br/> Bulk SMS Marketing on both a small and large scale is an extremely cost effective marketing service, that saves on your marketing and VoIP budget.&nbsp; Mobile mass marketing reaches customers within seconds and the results are nearly immediate.&nbsp; Our services combine the best of SMS marketing along with all of your VoIP and telecommunication needs, at a lower price. Working with VoIP Dialing provides our customers with the lowest pricing available on your VoIP services. &nbsp;
+						</p>
+					</div>
+				</div>
+			</div>
+		</li>
+	</ul>
+</div>
